@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --bg-color: #2874f0;
+  --header-height: 50px;
+  --footer-height: 50px;
+}
+
+header {
+  height: var(--header-height);
+  background-color: var(--bg-color);
+}
+
+nav {
+  display: flex;
+  height: var(--header-height);
+  justify-content: space-around;
+}
+
+.left {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-box input {
+  height: 35px;
+  margin-left: 30px;
+  display: inline-block;
+  width: 30vw;
+  padding: 0 10px;
+}
+
+.search-box i {
+  color: black;
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  font-size: 20px;
+}
+
+.right {
+  display: flex;
+}
+
+.login {
+  margin-right: 30px;
+  height: 30px;
+  width: 88px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+}
+
+.more {
+  color: white;
+  background-color: transparent;
+  border: none;
+  margin-right: 40px;
+  font-weight: bold;
+}
+
+.cart-box i {
+  margin-right: 5px;
+}
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.cart-box .cart {
+  background: transparent;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+#card-icon {
+  color: white;
+}
+
+/* main section start  */
+main {
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+.catagory {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.catagory-card {
+  padding: 10px;
+}
+
+.catagory-card img {
+  width: 70px;
+  height: 90px;
+}
+.catagory-card img,
+.catagory-card h5 {
+  text-align: center;
+}
+
+.slider-section {
+  height: 400px;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  height: 80%;
+  width: 100%;
+  background-image: url("/img/slider1.jpg");
+  background-size: 100% 100%;
+}
+
+footer {
+  background-color: var(--bg-color);
+  color: white;
+  height: var(--footer-height);
+}
